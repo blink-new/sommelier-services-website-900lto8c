@@ -223,26 +223,33 @@ Cette demande a été envoyée depuis le site Wine Maker
             </div>
 
             <div className="relative animate-slide-up">
-              <div className="relative bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-8 backdrop-blur-sm">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl"></div>
-                <div className="relative space-y-6">
-                  <Wine className="h-16 w-16 text-primary mx-auto" />
-                  <div className="text-center space-y-2">
-                    <h3 className="text-2xl font-serif font-semibold text-foreground">
-                      Expertise Professionnelle
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Création de cartes des vins sur mesure et conseils d'accords pour sublimer votre établissement
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4 pt-4">
-                    <div className="text-center p-4 bg-white/50 rounded-lg">
-                      <Award className="h-8 w-8 text-accent mx-auto mb-2" />
-                      <div className="text-sm font-medium">Certification</div>
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                <img 
+                  src="/restaurant-background.jpg" 
+                  alt="Ambiance restaurant avec verres de vin"
+                  className="w-full h-[500px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                  <div className="space-y-4">
+                    <Wine className="h-12 w-12 text-accent" />
+                    <div className="space-y-2">
+                      <h3 className="text-2xl font-serif font-semibold">
+                        Expertise Professionnelle
+                      </h3>
+                      <p className="text-white/90">
+                        Création de cartes des vins sur mesure et conseils d'accords pour sublimer votre établissement
+                      </p>
                     </div>
-                    <div className="text-center p-4 bg-white/50 rounded-lg">
-                      <Users className="h-8 w-8 text-accent mx-auto mb-2" />
-                      <div className="text-sm font-medium">Expérience</div>
+                    <div className="grid grid-cols-2 gap-4 pt-2">
+                      <div className="text-center p-3 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20">
+                        <Award className="h-6 w-6 text-accent mx-auto mb-1" />
+                        <div className="text-sm font-medium">Certification</div>
+                      </div>
+                      <div className="text-center p-3 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20">
+                        <Users className="h-6 w-6 text-accent mx-auto mb-1" />
+                        <div className="text-sm font-medium">3 ans d'expérience</div>
+                      </div>
                     </div>
                   </div>
                 </div>
